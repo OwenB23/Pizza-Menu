@@ -5,10 +5,10 @@ function getReceipt() {
   let runningTotal = 0;
   let sizeTotal = 0;
   let sizeArray = document.getElementsByClassName("size");
-  let selectedSize = "";
+
   for (let i = 0; i < sizeArray.length; i++) {
     if (sizeArray[i].checked) {
-      let selectedSize = sizeArray[i].value;
+      var selectedSize = sizeArray[i].value;
       text1 = text1 + selectedSize + "<br>";
     }
   }
